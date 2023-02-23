@@ -9,6 +9,13 @@ namespace CSharpAssingment2.Controllers
 {
     public class J2Controller : ApiController
     {
+        /// <summary>
+        /// Calculates the number of ways to roll a sum of 10 with two dice.
+        /// </summary>
+        /// <param name="m">Number of sides on first die.</param>
+        /// <param name="n">Number of sides on second die.</param>
+        /// <returns>The number of ways to roll a sum of 10.</returns>
+        /// 
         [HttpGet]
         [Route("api/J2/DiceGame/{m}/{n}")]
         public string DiceGame(int m, int n)
